@@ -90,7 +90,7 @@ function DreamForm() {
                     </div>
 
                     <div className="mt-2">
-                        <label>Do you want to reach it when? (approximately)</label>
+                        <label>Do you want to reach it when? (approximately) *</label>
                         <input required type="date" name="dreamDate" className="form-control" min="2022-03-19"/>
                     </div>
 

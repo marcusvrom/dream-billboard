@@ -14,3 +14,16 @@ span.disabled {
     text-decoration: none!important;
     opacity: 40%;
 }
+
+.filter-number {
+    border-radius: 8px 0 0 8px !important;
+    width: 75px !important;
+}
+
+.filter-number:hover, .filter-number:focus {
+    box-shadow: none !important;
+}
+
+.btn-filter-number {
+    border-radius: 0 8px 8px 0 !important;
+}

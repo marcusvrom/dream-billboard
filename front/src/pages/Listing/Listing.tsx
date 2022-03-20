@@ -4,6 +4,7 @@ import DreamCard from "../../components/DreamCard/DreamCard";
 import { DreamPage } from "../../types/dream";
 import { User } from "../../types/user";
 import { BASE_URL } from "../../utils/requests";
+import { BsCheckCircle } from 'react-icons/bs'
 
 import './listing.css';
 
@@ -36,8 +37,15 @@ function Listing() {
         setPageNumber(newPageNumber);
     }
 
+    const handleFilterPage = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        let numberPage = (event.target as any).pageFilter.value;
+        numberPage = numberPage - 1;
+        setPageNumber(numberPage);
+    }
     return (
         <div className="container">
+            
             <div className="w-100 d-flex justify-content-between">
                 <span onClick={() => handlePageChange(page.number - 1)} className={page.first ? 'btn-page mb-3 disabled' : 'btn-page mb-3'}>Previous Page</span>
                 <p>{page.number + 1} of {page.totalPages}</p>
@@ -59,6 +67,17 @@ function Listing() {
 
                 
 
+            </div>
+            <div className="row">
+                <form className="d-flex align-items-center justify-content-end" onSubmit={handleFilterPage}>
+                    <div>
+                        <label>Filter Specific Page</label>
+                        <div className="d-flex justify-content-end">
+                            <input type="number" name="pageFilter" max={page.totalPages} min={1} className="form-control filter-number" />
+                            <button type="submit" className="d-flex align-items-center btn btn-dark btn-filter-number"><BsCheckCircle /></button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     );

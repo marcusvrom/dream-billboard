@@ -1,0 +1,16 @@
+.btn-page {
+    cursor: pointer;
+    text-decoration: underline!important;
+    transition: 200ms;
+}
+
+.btn-page:hover {
+    opacity: 60%;
+    transition: 200ms;
+}
+
+span.disabled {
+    cursor: not-allowed!important;
+    text-decoration: none!important;
+    opacity: 40%;
+}

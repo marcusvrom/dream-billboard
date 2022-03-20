@@ -1,0 +1,43 @@
+header {
+    border-bottom: 1px dotted black;
+    margin-bottom: 15px;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.nav-logo {
+    color: black;
+    border-bottom: 1px dashed black;
+    transition: 300ms;
+}
+
+.nav-logo:hover {
+    transition: 300ms;
+    opacity: 60%;
+    padding-bottom: 2px;
+}
+
+.btn-text {
+    margin-left: 8px;
+}
+
+.btn-dark {
+    transition: 300ms!important;
+}
+
+.btn-dark:hover {
+    transition: 300ms;
+    opacity: 80%;
+}
+
+@media (max-width: 330px) {
+    .nav-content {
+        flex-direction: column;
+    }
+}

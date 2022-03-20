@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Fredoka', monospace;
+    text-decoration: none!important;
+    scroll-behavior: smooth!important;
+    transition: 1000ms;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    width: 5px!important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

@@ -1,0 +1,4 @@
+.card-header, .card-footer {
+    background: transparent!important;
+    border: none!important;
+}

@@ -1,71 +1,99 @@
-# 🌟 Dream Billboard (PT-BR)
+# 🌟 Dream Billboard - Full Stack Project
 
-**Dream Billboard** é uma plataforma moderna para gestão e visualização de anúncios digitais. O projeto foca em uma interface intuitiva e performance otimizada, utilizando o ecossistema React.
-
-## 🚀 Tecnologias Utilizadas
-
-O projeto foi construído com as melhores práticas de desenvolvimento web:
-
-* **Next.js 14+**: Framework React para renderização híbrida e rotas.
-* **TypeScript**: Tipagem estática para maior segurança do código.
-* **Tailwind CSS**: Estilização baseada em utilitários para uma UI responsiva.
-* **Lucide React**: Biblioteca de ícones leves e elegantes.
-
-## 🛠️ Instalação e Execução
-
-Siga os passos abaixo para configurar o ambiente local:
-
-1. **Clonar o repositório:**
-   ```bash
-   git clone [https://github.com/marcusvrom/dream-billboard.git](https://github.com/marcusvrom/dream-billboard.git)
+Este repositório contém o ecossistema completo do **Dream Billboard**, uma plataforma moderna para gestão e visualização de anúncios digitais, composta por um frontend de alta performance e um backend robusto.
 
 ---
 
-# 🌟 Dream Billboard (EN-US)
+## 💻 Frontend (Next.js)
 
-**Dream Billboard** is a modern platform designed for managing and displaying digital advertisements. This project focuses on a sleek interface and optimized performance using the React ecosystem.
+Localizado na raiz ou pasta principal, o frontend foca em uma interface intuitiva e responsiva.
 
-## 🚀 Technologies
+### 🚀 Tecnologias
+* **Next.js 14+**: Framework React com App Router.
+* **TypeScript**: Tipagem estática para segurança do código.
+* **Tailwind CSS**: Estilização moderna e rápida.
+* **Lucide React**: Biblioteca de ícones.
 
-This project is built with modern web development best practices:
+### 🛠️ Instalação (Frontend)
+1. Instale as dependências: `npm install`
+2. Rode o projeto: `npm run dev`
+3. Acesse: `http://localhost:3000`
 
-* **Next.js 14+**: React framework for hybrid rendering and routing (App Router).
-* **TypeScript**: Static typing for enhanced code reliability.
-* **Tailwind CSS**: Utility-first styling for a fully responsive UI.
-* **Lucide React**: Lightweight and elegant icon library.
+---
 
-## 🛠️ Installation & Setup
+## ⚙️ Backend (Java Spring Boot)
 
-Follow these steps to set up your local development environment:
+Localizado em `/back`, o backend gerencia a lógica de negócio e persistência de dados.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/marcusvrom/dream-billboard.git](https://github.com/marcusvrom/dream-billboard.git)
-    ```
+### 🚀 Tecnologias
+* **Java 17+** & **Spring Boot 3**
+* **Spring Data JPA**: Persistência de dados.
+* **Maven**: Gerenciador de dependências.
+* **Pacote Base**: `kiskadee.dreambillboard`
 
-2.  **Navigate to the directory:**
-    ```bash
-    cd dream-billboard
-    ```
+### 🏗️ Estrutura de Pastas
+* `/controller`: Endpoints da API.
+* `/service`: Lógica de negócio.
+* `/repository`: Comunicação com o banco de dados.
+* `/model`: Entidades de dados.
 
-3.  **Install dependencies:**
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
+### 🛠️ Instalação (Backend)
+1. Navegue até a pasta: `cd back`
+2. Compile o projeto: `mvn clean install`
+3. Execute: `mvn spring-boot:run`
+4. API disponível em: `http://localhost:8080`
 
-4.  **Launch the development server:**
-    ```bash
-    npm run dev
-    ```
-    Open `http://localhost:3000` in your browser to see the result.
+---
+Desenvolvido por [Marcus V.](https://github.com/marcusvrom)
 
-## 📂 Project Structure
+---
 
-* `/src/app`: Page structure and routing logic (Next.js App Router).
-* `/src/components`: Reusable UI components.
-* `/public`: Static assets like images and fonts.
+# 🌟 Dream Billboard - Full Stack Project
 
+This repository hosts the **Dream Billboard** ecosystem, a modern platform for digital advertisement management, featuring a high-performance frontend and a robust backend.
+
+---
+
+## 💻 Frontend (Next.js)
+
+The frontend focuses on a sleek, intuitive, and fully responsive user experience.
+
+### 🚀 Stack
+* **Next.js 14+**: React framework (App Router).
+* **TypeScript**: Type safety.
+* **Tailwind CSS**: Utility-first styling.
+* **Lucide React**: Iconography.
+
+### 🛠️ Setup (Frontend)
+1. Install dependencies: `npm install`
+2. Run development server: `npm run dev`
+3. URL: `http://localhost:3000`
+
+---
+
+## ⚙️ Backend (Java Spring Boot)
+
+Located in `/back`, the API handles business logic and data persistence.
+
+### 🚀 Stack
+* **Java 17+** & **Spring Boot 3**
+* **Spring Data JPA**: Data persistence.
+* **Maven**: Build and dependency management.
+* **Base Package**: `kiskadee.dreambillboard`
+
+### 🏗️ Architecture
+* `/controller`: REST Endpoints.
+* `/service`: Business rules.
+* `/repository`: Database communication.
+* `/model`: Data entities.
+
+### 🛠️ Setup (Backend)
+1. Navigate to folder: `cd back`
+2. Build project: `mvn clean install`
+3. Run: `mvn spring-boot:run`
+4. API URL: `http://localhost:8080`
+
+---
+Developed by [Marcus V.](https://github.com/marcusvrom)
 ---
 Developed with ☕ by [Marcus V.](https://github.com/marcusvrom)

@@ -94,6 +94,4 @@ Located in `/back`, the API handles business logic and data persistence.
 4. API URL: `http://localhost:8080`
 
 ---
-Developed by [Marcus V.](https://github.com/marcusvrom)
----
 Developed with ☕ by [Marcus V.](https://github.com/marcusvrom)
